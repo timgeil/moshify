@@ -20,7 +20,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
@@ -31,7 +30,7 @@
   <!-- Navbar -->
   <header>
     <nav class="nav collapsible">
-      <a class="nav__brand" href="/"><img src="images/logo.svg" alt="Moshified Logo"></a>
+      <a aria-label="Moshify Logo" class="nav__brand" href="/"><img src="images/logo.svg" alt="Moshified Logo"></a>
       <svg class="icon icon--white nav__toggler">
         <use href="images/icons.svg#menu"></use>
       </svg>
@@ -69,7 +68,7 @@
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, enim.</p>
     </header>
     <div class="input-group">
-      <input type="text" class="input" placeholder="Enter domain name here...">
+      <input aria-label="Search Domain" type="text" class="input" placeholder="Enter domain name here...">
       <button class="btn btn--accent">
         <svg class="icon icon--white">
           <use href="images/icons.svg#search"></use>
@@ -373,7 +372,11 @@
           </svg>
         </div>
         <div class="collapsible__content">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, error?
+          <ul class="list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
         </div>
       </section>
       <section class="collapsible footer__section">
@@ -384,7 +387,11 @@
           </svg>
         </div>
         <div class="collapsible__content">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, error?
+          <ul class="list">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Knowledge Base</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
         </div>
       </section>
       <section class="collapsible footer__section">
@@ -395,7 +402,11 @@
           </svg>
         </div>
         <div class="collapsible__content">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, error?
+          <ul class="list">
+            <li><a href="#">Domain Checker</a></li>
+            <li><a href="#">Domain Transfer</a></li>
+            <li><a href="#">Free Domain</a></li>
+          </ul>
         </div>
       </section>
       <div class="footer__brand">
